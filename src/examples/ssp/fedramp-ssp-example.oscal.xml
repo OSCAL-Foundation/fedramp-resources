@@ -284,7 +284,7 @@
       <name>Federal Risk and Authorization Management Program: Program Management Office</name>
       <short-name>FedRAMP PMO</short-name>
       <link href="http://fedramp.gov" rel="homepage"/>
-      <link href="#11111111-2222-4000-8000-001000000051" rel="logo"/>
+
       <email-address>info@fedramp.gov</email-address>
       <address type="work">
         <addr-line>1800 F St. NW</addr-line>
@@ -299,16 +299,7 @@
           role in the responsible-party assemblies.</p>
       </remarks>
     </party>
-    <party uuid="11111111-2222-4000-8000-004000000003" type="organization">
-      <name>Federal Risk and Authorization Management Program: Joint Authorization Board</name>
-      <short-name>FedRAMP JAB</short-name>
-      <link href="#11111111-2222-4000-8000-001000000051" rel="logo"/>
-      <remarks>
-        <p>This party entry must be present in a FedRAMP SSP.</p>
-        <p>The uuid may be different; however, the uuid must be associated with the "fedramp-jab"
-          role in the responsible-party assemblies.</p>
-      </remarks>
-    </party>
+
     <party uuid="11111111-2222-4000-8000-004000000004" type="organization">
       <name>External Organization</name>
       <short-name>External</short-name>
@@ -471,6 +462,9 @@
     <party uuid="66666666-2222-4000-8000-004000000001" type="organization">
       <name>Name of Telco Provider</name>
     </party>
+    <responsible-party role-id="fedramp-pmo">
+      <party-uuid>11111111-2222-4000-8000-004000000002</party-uuid>
+    </responsible-party>
     <responsible-party role-id="provider">
       <party-uuid>11111111-2222-4000-8000-004000000018</party-uuid>
     </responsible-party>
@@ -507,7 +501,6 @@
       </remarks>
     </responsible-party>
     <responsible-party role-id="authorizing-official">
-      <party-uuid>11111111-2222-4000-8000-004000000003</party-uuid>
       <party-uuid>11111111-2222-4000-8000-004000000015</party-uuid>
       <remarks>
         <p>One or more</p>
@@ -17079,18 +17072,7 @@
       <rlink href="./attachments/ISAs/ISA-1.docx"/>
       <base64 filename="ISA-1.docx" media-type="application/msword">00000000</base64>
     </resource>
-    <resource uuid="11111111-2222-4000-8000-001000000051">
-      <title>FedRAMP Logo</title>
-      <description>
-        <p>FedRAMP Logo</p>
-      </description>
-      <prop name="type" value="logo"/>
-      <rlink href="https://www.fedramp.gov/assets/img/logo-main-fedramp.png"/>
-      <base64 filename="logo-main-fedramp.png" media-type="image/png">00000000</base64>
-      <remarks>
-        <p>Must be present in a FedRAMP SSP.</p>
-      </remarks>
-    </resource>
+
     <resource uuid="11111111-2222-4000-8000-001000000052">
       <title>CSP Logo</title>
       <description>
