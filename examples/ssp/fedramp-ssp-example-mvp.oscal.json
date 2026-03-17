@@ -1,0 +1,308 @@
+{
+  "system-security-plan" : {
+    "back-matter" : {
+      "resources" : [ {
+        "rlinks" : [ {
+          "media-type" : "application/pdf",
+          "href" : "./AC_policy.pdf"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000005",
+        "title" : "Access Control (AC) Policy"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/pdf",
+          "href" : "./AC_procedure.pdf"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000023",
+        "title" : "Access Control (AC) Procedure Title"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/pdf",
+          "href" : "./users_guide.pdf"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000041",
+        "title" : "User's Guide"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/msword",
+          "href" : "./rob.docx"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000042",
+        "title" : "Rules of Behavior (RoB)"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/msword",
+          "href" : "./cp.docx"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000043",
+        "title" : "Contingency Plan (CP)"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/msword",
+          "href" : "./CM_Plan.docx"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000044",
+        "title" : "Configuration Management (CM) Plan"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/msword",
+          "href" : "./IR_Plan.docx"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000045",
+        "title" : "Incident Response (IR) Plan"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/msword",
+          "href" : "./ConMon_Plan.docx"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000047",
+        "title" : "Continuous Monitoring Plan"
+      }, {
+        "rlinks" : [ {
+          "href" : "./attachments/plans/sample_SCRMP_procedure.pdf"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000049",
+        "title" : "Supply Chain Risk Management Plan"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "application/msword",
+          "href" : "./ISA-1.docx"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000050",
+        "title" : "Interconnection Security Agreement"
+      }, {
+        "rlinks" : [ {
+          "media-type" : "image/png",
+          "href" : "./attachments/img/logo.png"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000052",
+        "title" : "CSP Logo"
+      }, {
+        "rlinks" : [ {
+          "href" : "./attachments/diagrams/boundary.png"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000054",
+        "title" : "Boundary Diagram"
+      }, {
+        "rlinks" : [ {
+          "href" : "./attachments/diagrams/network.png"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000055",
+        "title" : "Network Diagram"
+      }, {
+        "rlinks" : [ {
+          "href" : "./attachments/diagrams/dataflow.png"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-001000000056",
+        "title" : "Data Flow Diagram"
+      } ]
+    },
+    "metadata" : {
+      "published" : "2024-12-31T23:59:59Z",
+      "version" : "Draft-01",
+      "parties" : [ {
+        "type" : "organization",
+        "links" : [ {
+          "href" : "http://example.com",
+          "rel" : "homepage"
+        } ],
+        "short-name" : "CSP Acronym/Short Name",
+        "addresses" : [ {
+          "state" : "ST",
+          "postal-code" : "00000",
+          "addr-lines" : [ "1234 S. Main St." ],
+          "city" : "Anywhere"
+        } ],
+        "uuid" : "11111111-2222-4000-8000-004000000001",
+        "name" : "Cloud Service Provider (CSP) Name"
+      } ],
+      "oscal-version" : "1.2.1",
+      "last-modified" : "2025-01-08T04:18:29Z",
+      "responsible-parties" : [ {
+        "party-uuids" : [ "11111111-2222-4000-8000-004000000001" ],
+        "role-id" : "cloud-service-provider"
+      } ],
+      "title" : "\\[EXAMPLE\\] FedRAMP \\[Baseline Name\\] System Security Plan (SSP)",
+      "roles" : [ {
+        "title" : "Cloud Service Provider",
+        "id" : "cloud-service-provider",
+        "short-name" : "CSP"
+      }, {
+        "title" : "Information System Security Officer",
+        "id" : "information-system-security-officer",
+        "short-name" : "ISSO"
+      } ]
+    },
+    "system-implementation" : {
+      "users" : [ {
+        "uuid" : "11111111-2222-4000-8000-008000000001",
+        "authorized-privileges" : [ {
+          "functions-performed" : [ "none" ]
+        } ]
+      } ],
+      "components" : [ {
+        "title" : "This System",
+        "type" : "this-system",
+        "status" : {
+          "state" : "operational"
+        },
+        "description" : "This component represents the entire authorization boundary, as depicted in the system authorization boundary diagram.\n\nFedRAMP requires exactly one \"this-system\" component, which is used in control implementation responses and interconnections.",
+        "uuid" : "11111111-2222-4000-8000-009000000000"
+      } ]
+    },
+    "import-profile" : {
+      "href" : "https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml"
+    },
+    "uuid" : "11111111-2222-4000-8000-000000000000",
+    "control-implementation" : {
+      "implemented-requirements" : [ {
+        "uuid" : "11111111-2222-4000-8000-012000010000",
+        "set-parameters" : [ {
+          "values" : [ "all managers, administrators and users of the system" ],
+          "param-id" : "ac-01_odp.01"
+        }, {
+          "values" : [ "all managers and administrators of the system" ],
+          "param-id" : "ac-01_odp.02"
+        }, {
+          "values" : [ "System-level" ],
+          "param-id" : "ac-01_odp.03"
+        }, {
+          "values" : [ "System Architect" ],
+          "param-id" : "ac-01_odp.04"
+        }, {
+          "values" : [ "at least every 3 years" ],
+          "param-id" : "ac-01_odp.05"
+        }, {
+          "values" : [ "change in organizational legal status or ownership" ],
+          "param-id" : "ac-01_odp.06"
+        }, {
+          "values" : [ "at least annually" ],
+          "param-id" : "ac-01_odp.07"
+        }, {
+          "values" : [ "change in policy or a security incident involving a failure of access control mechanisms" ],
+          "param-id" : "ac-01_odp.08"
+        } ],
+        "control-id" : "ac-1",
+        "statements" : [ {
+          "statement-id" : "ac-1_smt.a",
+          "uuid" : "11111111-2222-4000-8000-012000010100",
+          "by-components" : [ {
+            "component-uuid" : "11111111-2222-4000-8000-009000000000",
+            "description" : "Describe how Part a is satisfied within the system as a whole.",
+            "implementation-status" : {
+              "state" : "implemented"
+            },
+            "uuid" : "11111111-2222-4000-8000-012000010101",
+            "responsible-roles" : [ {
+              "party-uuids" : [ "11111111-2222-4000-8000-004000000001" ],
+              "role-id" : "information-system-security-officer",
+              "remarks" : "An error in the OSCAL metaschema incorrectly requires at leat one `party-uuid` to be present.\n\nFor now, just use the `party-uuid` of the CSP parties entry.\n\nThe `party-uuid` will be removed from the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122) is resolved."
+            } ]
+          } ]
+        }, {
+          "statement-id" : "ac-1_smt.b",
+          "uuid" : "11111111-2222-4000-8000-012000010200",
+          "by-components" : [ {
+            "component-uuid" : "11111111-2222-4000-8000-009000000000",
+            "description" : "Describe how Part b is satisfied within the system as a whole.",
+            "implementation-status" : {
+              "remarks" : "Describe the plan to complete the implementation.",
+              "state" : "partial"
+            },
+            "uuid" : "11111111-2222-4000-8000-012000010201",
+            "responsible-roles" : [ {
+              "party-uuids" : [ "11111111-2222-4000-8000-004000000001" ],
+              "role-id" : "information-system-security-officer",
+              "remarks" : "An error in the OSCAL metaschema incorrectly requires at leat one `party-uuid` to be present.\n\nFor now, just use the `party-uuid` of the CSP parties entry.\n\nThe `party-uuid` will be removed from the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122) is resolved."
+            } ],
+            "props" : [ {
+              "value" : "2024-01-31Z",
+              "ns" : "http://fedramp.gov/ns/oscal",
+              "name" : "planned-completion-date"
+            } ]
+          } ]
+        }, {
+          "statement-id" : "ac-1_smt.c",
+          "uuid" : "11111111-2222-4000-8000-012000010300",
+          "by-components" : [ {
+            "component-uuid" : "11111111-2222-4000-8000-009000000000",
+            "description" : "Describe how Part b-1 is satisfied.",
+            "implementation-status" : {
+              "state" : "implemented"
+            },
+            "uuid" : "11111111-2222-4000-8000-012000010301",
+            "responsible-roles" : [ {
+              "party-uuids" : [ "11111111-2222-4000-8000-004000000001" ],
+              "role-id" : "information-system-security-officer",
+              "remarks" : "An error in the OSCAL metaschema incorrectly requires at leat one `party-uuid` to be present.\n\nFor now, just use the `party-uuid` of the CSP parties entry.\n\nThe `party-uuid` will be removed from the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122) is resolved."
+            } ]
+          } ]
+        } ]
+      } ],
+      "description" : "OSCAL requires this description field to be present.\n\nFedRAMP will ignore it."
+    },
+    "system-characteristics" : {
+      "system-name" : "System's Full Name",
+      "system-information" : {
+        "information-types" : [ {
+          "title" : "Information Type Name",
+          "uuid" : "11111111-2222-4000-8000-006000000001",
+          "description" : "OSCAL requires at leaset one entry.\n\nFor MVP, either just leave this description or paste Appendix K table here.\n\nBreak Appendix K down to individual entries after MVP."
+        } ]
+      },
+      "props" : [ {
+        "value" : "saas",
+        "name" : "cloud-service-model"
+      }, {
+        "value" : "government-only-cloud",
+        "name" : "cloud-deployment-model"
+      } ],
+      "data-flow" : {
+        "description" : "A holistic, top-level explanation of the system's data flows.",
+        "diagrams" : [ {
+          "links" : [ {
+            "media-type" : "application/pdf",
+            "href" : "./data_flow_diagram.pdf",
+            "rel" : "diagram"
+          } ],
+          "uuid" : "11111111-2222-4000-8000-007000000003",
+          "description" : "Dataflow diagram narriative."
+        } ]
+      },
+      "network-architecture" : {
+        "description" : "Network architecture narriative.",
+        "diagrams" : [ {
+          "links" : [ {
+            "media-type" : "application/pdf",
+            "href" : "./network_architecture.pdf",
+            "rel" : "diagram"
+          } ],
+          "uuid" : "11111111-2222-4000-8000-007000000002",
+          "description" : "A diagram-specific explanation."
+        } ]
+      },
+      "status" : {
+        "state" : "operational"
+      },
+      "system-name-short" : "System's Short Name or Acronym",
+      "system-ids" : [ {
+        "identifier-type" : "http://fedramp.gov/ns/oscal",
+        "id" : "F00000000"
+      } ],
+      "description" : "Provide the system description here",
+      "authorization-boundary" : {
+        "description" : "A holistic, top-level explanation of the FedRAMP authorization boundary.",
+        "diagrams" : [ {
+          "links" : [ {
+            "media-type" : "application/pdf",
+            "href" : "./authorization_boundary.pdf",
+            "rel" : "diagram"
+          } ],
+          "uuid" : "11111111-2222-4000-8000-007000000001",
+          "description" : "Authorization boundary narriative."
+        } ]
+      },
+      "security-sensitivity-level" : "fips-199-high"
+    }
+  }
+}

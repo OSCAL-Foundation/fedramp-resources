@@ -1,0 +1,265 @@
+---
+system-security-plan:
+  control-implementation:
+    description: |-
+      OSCAL requires this description field to be present.
+
+      FedRAMP will ignore it.
+    implemented-requirements:
+    - statements:
+      - by-components:
+        - component-uuid: 11111111-2222-4000-8000-009000000000
+          description: Describe how Part a is satisfied within the system as a whole.
+          implementation-status:
+            state: implemented
+          uuid: 11111111-2222-4000-8000-012000010101
+          responsible-roles:
+          - role-id: information-system-security-officer
+            remarks: |-
+              An error in the OSCAL metaschema incorrectly requires at leat one `party-uuid` to be present.
+
+              For now, just use the `party-uuid` of the CSP parties entry.
+
+              The `party-uuid` will be removed from the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122) is resolved.
+            party-uuids:
+            - 11111111-2222-4000-8000-004000000001
+        statement-id: ac-1_smt.a
+        uuid: 11111111-2222-4000-8000-012000010100
+      - by-components:
+        - props:
+          - name: planned-completion-date
+            value: 2024-01-31Z
+            ns: http://fedramp.gov/ns/oscal
+          component-uuid: 11111111-2222-4000-8000-009000000000
+          description: Describe how Part b is satisfied within the system as a whole.
+          implementation-status:
+            state: partial
+            remarks: Describe the plan to complete the implementation.
+          uuid: 11111111-2222-4000-8000-012000010201
+          responsible-roles:
+          - role-id: information-system-security-officer
+            remarks: |-
+              An error in the OSCAL metaschema incorrectly requires at leat one `party-uuid` to be present.
+
+              For now, just use the `party-uuid` of the CSP parties entry.
+
+              The `party-uuid` will be removed from the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122) is resolved.
+            party-uuids:
+            - 11111111-2222-4000-8000-004000000001
+        statement-id: ac-1_smt.b
+        uuid: 11111111-2222-4000-8000-012000010200
+      - by-components:
+        - component-uuid: 11111111-2222-4000-8000-009000000000
+          description: Describe how Part b-1 is satisfied.
+          implementation-status:
+            state: implemented
+          uuid: 11111111-2222-4000-8000-012000010301
+          responsible-roles:
+          - role-id: information-system-security-officer
+            remarks: |-
+              An error in the OSCAL metaschema incorrectly requires at leat one `party-uuid` to be present.
+
+              For now, just use the `party-uuid` of the CSP parties entry.
+
+              The `party-uuid` will be removed from the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122) is resolved.
+            party-uuids:
+            - 11111111-2222-4000-8000-004000000001
+        statement-id: ac-1_smt.c
+        uuid: 11111111-2222-4000-8000-012000010300
+      uuid: 11111111-2222-4000-8000-012000010000
+      set-parameters:
+      - values:
+        - "all managers, administrators and users of the system"
+        param-id: ac-01_odp.01
+      - values:
+        - all managers and administrators of the system
+        param-id: ac-01_odp.02
+      - values:
+        - System-level
+        param-id: ac-01_odp.03
+      - values:
+        - System Architect
+        param-id: ac-01_odp.04
+      - values:
+        - at least every 3 years
+        param-id: ac-01_odp.05
+      - values:
+        - change in organizational legal status or ownership
+        param-id: ac-01_odp.06
+      - values:
+        - at least annually
+        param-id: ac-01_odp.07
+      - values:
+        - change in policy or a security incident involving a failure of access control mechanisms
+        param-id: ac-01_odp.08
+      control-id: ac-1
+  system-characteristics:
+    security-sensitivity-level: fips-199-high
+    system-name: System's Full Name
+    system-information:
+      information-types:
+      - description: |-
+          OSCAL requires at leaset one entry.
+
+          For MVP, either just leave this description or paste Appendix K table here.
+
+          Break Appendix K down to individual entries after MVP.
+        title: Information Type Name
+        uuid: 11111111-2222-4000-8000-006000000001
+    props:
+    - name: cloud-service-model
+      value: saas
+    - name: cloud-deployment-model
+      value: government-only-cloud
+    data-flow:
+      diagrams:
+      - description: Dataflow diagram narriative.
+        links:
+        - href: ./data_flow_diagram.pdf
+          rel: diagram
+          media-type: application/pdf
+        uuid: 11111111-2222-4000-8000-007000000003
+      description: "A holistic, top-level explanation of the system's data flows."
+    network-architecture:
+      diagrams:
+      - description: A diagram-specific explanation.
+        links:
+        - href: ./network_architecture.pdf
+          rel: diagram
+          media-type: application/pdf
+        uuid: 11111111-2222-4000-8000-007000000002
+      description: Network architecture narriative.
+    status:
+      state: operational
+    system-name-short: System's Short Name or Acronym
+    system-ids:
+    - identifier-type: http://fedramp.gov/ns/oscal
+      id: F00000000
+    description: Provide the system description here
+    authorization-boundary:
+      diagrams:
+      - description: Authorization boundary narriative.
+        links:
+        - href: ./authorization_boundary.pdf
+          rel: diagram
+          media-type: application/pdf
+        uuid: 11111111-2222-4000-8000-007000000001
+      description: "A holistic, top-level explanation of the FedRAMP authorization boundary."
+  back-matter:
+    resources:
+    - title: Access Control (AC) Policy
+      rlinks:
+      - href: ./AC_policy.pdf
+        media-type: application/pdf
+      uuid: 11111111-2222-4000-8000-001000000005
+    - title: Access Control (AC) Procedure Title
+      rlinks:
+      - href: ./AC_procedure.pdf
+        media-type: application/pdf
+      uuid: 11111111-2222-4000-8000-001000000023
+    - title: User's Guide
+      rlinks:
+      - href: ./users_guide.pdf
+        media-type: application/pdf
+      uuid: 11111111-2222-4000-8000-001000000041
+    - title: Rules of Behavior (RoB)
+      rlinks:
+      - href: ./rob.docx
+        media-type: application/msword
+      uuid: 11111111-2222-4000-8000-001000000042
+    - title: Contingency Plan (CP)
+      rlinks:
+      - href: ./cp.docx
+        media-type: application/msword
+      uuid: 11111111-2222-4000-8000-001000000043
+    - title: Configuration Management (CM) Plan
+      rlinks:
+      - href: ./CM_Plan.docx
+        media-type: application/msword
+      uuid: 11111111-2222-4000-8000-001000000044
+    - title: Incident Response (IR) Plan
+      rlinks:
+      - href: ./IR_Plan.docx
+        media-type: application/msword
+      uuid: 11111111-2222-4000-8000-001000000045
+    - title: Continuous Monitoring Plan
+      rlinks:
+      - href: ./ConMon_Plan.docx
+        media-type: application/msword
+      uuid: 11111111-2222-4000-8000-001000000047
+    - title: Supply Chain Risk Management Plan
+      rlinks:
+      - href: ./attachments/plans/sample_SCRMP_procedure.pdf
+      uuid: 11111111-2222-4000-8000-001000000049
+    - title: Interconnection Security Agreement
+      rlinks:
+      - href: ./ISA-1.docx
+        media-type: application/msword
+      uuid: 11111111-2222-4000-8000-001000000050
+    - title: CSP Logo
+      rlinks:
+      - href: ./attachments/img/logo.png
+        media-type: image/png
+      uuid: 11111111-2222-4000-8000-001000000052
+    - title: Boundary Diagram
+      rlinks:
+      - href: ./attachments/diagrams/boundary.png
+      uuid: 11111111-2222-4000-8000-001000000054
+    - title: Network Diagram
+      rlinks:
+      - href: ./attachments/diagrams/network.png
+      uuid: 11111111-2222-4000-8000-001000000055
+    - title: Data Flow Diagram
+      rlinks:
+      - href: ./attachments/diagrams/dataflow.png
+      uuid: 11111111-2222-4000-8000-001000000056
+  metadata:
+    last-modified: 2025-01-08T04:18:29Z
+    responsible-parties:
+    - role-id: cloud-service-provider
+      party-uuids:
+      - 11111111-2222-4000-8000-004000000001
+    title: "\\[EXAMPLE\\] FedRAMP \\[Baseline Name\\] System Security Plan (SSP)"
+    roles:
+    - title: Cloud Service Provider
+      id: cloud-service-provider
+      short-name: CSP
+    - title: Information System Security Officer
+      id: information-system-security-officer
+      short-name: ISSO
+    published: 2024-12-31T23:59:59Z
+    version: Draft-01
+    parties:
+    - addresses:
+      - city: Anywhere
+        state: ST
+        postal-code: "00000"
+        addr-lines:
+        - 1234 S. Main St.
+      uuid: 11111111-2222-4000-8000-004000000001
+      name: Cloud Service Provider (CSP) Name
+      type: organization
+      links:
+      - href: http://example.com
+        rel: homepage
+      short-name: CSP Acronym/Short Name
+    oscal-version: 1.2.1
+  system-implementation:
+    users:
+    - authorized-privileges:
+      - functions-performed:
+        - none
+      uuid: 11111111-2222-4000-8000-008000000001
+    components:
+    - description: |-
+        This component represents the entire authorization boundary, as depicted in the system authorization boundary diagram.
+
+        FedRAMP requires exactly one "this-system" component, which is used in control implementation responses and interconnections.
+      uuid: 11111111-2222-4000-8000-009000000000
+      title: This System
+      type: this-system
+      status:
+        state: operational
+  import-profile:
+    href: https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml
+  uuid: 11111111-2222-4000-8000-000000000000
