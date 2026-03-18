@@ -115,11 +115,43 @@
       <status state="operational"/>
     </component>
 
+    <inventory-item uuid="11111111-2222-4000-8000-011000000001">
+      <description><p>Flat-File Example (No implemented-component).</p></description>
+      <prop name="asset-id" value="unique-asset-id"/>
+      <prop name="ipv4-address" value="0.0.0.0"/>
+      <prop name="ipv6-address" value="0000:0000:0000:0000"/>
+      <prop name="virtual" value="no"/>
+      <prop name="public" value="no"/>
+      <prop name="fqdn" value="example.com"/>
+      <prop name="uri" value="https://example/query?key=value#anchor"/>
+      <prop name="netbios-name" value="netbios-name"/>
+      <prop name="mac-address" value="00:00:00:00:00:00"/>
+      <prop name="software-name" value="software-name"/>
+      <prop name="software-version" value="V 0.0.0"/>
+      <prop name="asset-type" value="os"/>
+<!--      <prop name="vendor-name" value="Vendor Name"/>-->
+      <prop name="model" value="Model Number"/>
+      <prop name="software-patch-level" value="Patch-Level"/>
+      <prop name="serial-number" value="Serial #"/>
+      <prop name="asset-tag" value="Asset Tag"/>
+      <prop name="vlan-id" value="VLAN Identifier"/>
+      <prop name="network-id" value="Network Identifier"/>
+      <prop name="scan-type" ns="http://fedramp.gov/ns/oscal" value="infrastructure"/>
+      <prop name="allows-authenticated-scan"  value="no">
+        <remarks><p>If no, explain why. If yes, omit remarks field.</p></remarks>
+      </prop>
+      <prop name="baseline-configuration-name" value="Baseline Config. Name" />
+      <prop name="physical-location" value="Physical location of Asset" />
+      <prop name="is-scanned" value="yes"/>
+      <prop name="function" value="Required brief, text-based description."/>
+      <link rel="validated-by" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985" />
+      <remarks><p>COMMENTS: Additional information about this item, such as the admin and asset owner.</p></remarks>
+    </inventory-item>
+    
   </system-implementation>
   <control-implementation>
     <description>
-      <p>OSCAL requires this description field to be present.</p>
-      <p>FedRAMP will ignore it.</p>
+      <p>There is one control in this example. Follow this pattern for each additional control.</p>
     </description>
     <implemented-requirement control-id="ac-1" uuid="11111111-2222-4000-8000-012000010000">
       <set-parameter param-id="ac-01_odp.01">
@@ -207,61 +239,6 @@
   </control-implementation>
   <back-matter>
 
-    <resource uuid="11111111-2222-4000-8000-001000000005">
-      <title>Access Control (AC) Policy</title>
-      <rlink media-type="application/pdf" href="./AC_policy.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000023">
-      <title>Access Control (AC) Procedure Title</title>
-      <rlink media-type="application/pdf" href="./AC_procedure.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000041">
-      <title>User's Guide</title>
-      <rlink media-type="application/pdf" href="./users_guide.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000042">
-      <title>Rules of Behavior (RoB)</title>
-      <rlink href="./rob.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000043">
-      <title>Contingency Plan (CP)</title>
-      <rlink href="./cp.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000044">
-      <title>Configuration Management (CM) Plan</title>
-      <rlink href="./CM_Plan.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000045">
-      <title>Incident Response (IR) Plan</title>
-      <rlink href="./IR_Plan.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000047">
-      <title>Continuous Monitoring Plan</title>
-      <rlink href="./ConMon_Plan.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000049">
-      <title>Supply Chain Risk Management Plan</title>
-      <rlink href="./attachments/plans/sample_SCRMP_procedure.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000050">
-      <title>Interconnection Security Agreement</title>
-      <rlink href="./ISA-1.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000052">
-      <title>CSP Logo</title>
-      <rlink href="./attachments/img/logo.png" media-type="image/png"/>
-    </resource>
-
     <resource uuid="11111111-2222-4000-8000-001000000054">
       <title>Boundary Diagram</title>
       <rlink href="./attachments/diagrams/boundary.png"/>
@@ -274,7 +251,6 @@
       <title>Data Flow Diagram</title>
       <rlink href="./attachments/diagrams/dataflow.png"/>
     </resource>
-
 
   </back-matter>
 </system-security-plan>
