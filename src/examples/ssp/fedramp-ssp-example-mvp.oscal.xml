@@ -114,36 +114,45 @@
       </description>
       <status state="operational"/>
     </component>
-
+    
+    
     <inventory-item uuid="11111111-2222-4000-8000-011000000001">
       <description><p>Flat-File Example (No implemented-component).</p></description>
-      <prop name="asset-id" value="unique-asset-id"/>
-      <prop name="ipv4-address" value="0.0.0.0"/>
-      <prop name="ipv6-address" value="0000:0000:0000:0000"/>
-      <prop name="virtual" value="no"/>
-      <prop name="public" value="no"/>
-      <prop name="fqdn" value="example.com"/>
-      <prop name="uri" value="https://example/query?key=value#anchor"/>
-      <prop name="netbios-name" value="netbios-name"/>
-      <prop name="mac-address" value="00:00:00:00:00:00"/>
-      <prop name="software-name" value="software-name"/>
-      <prop name="software-version" value="V 0.0.0"/>
       <prop name="asset-type" value="os"/>
-<!--      <prop name="vendor-name" value="Vendor Name"/>-->
-      <prop name="model" value="Model Number"/>
-      <prop name="software-patch-level" value="Patch-Level"/>
-      <prop name="serial-number" value="Serial #"/>
-      <prop name="asset-tag" value="Asset Tag"/>
+      <prop name="asset-id" value="unique-asset-id"/>
+      <prop name="asset-tag" value="xyz-123"/>
+
+      <prop name="public" value="no"/>
+      <prop name="virtual" value="no"/>
       <prop name="vlan-id" value="VLAN Identifier"/>
       <prop name="network-id" value="Network Identifier"/>
-      <prop name="scan-type" ns="http://fedramp.gov/ns/oscal" value="infrastructure"/>
+      <prop name="label" value="Diagram Label"/>
+      <prop name="sort-id" value="000001"/>
+      <prop name="baseline-configuration-name" value="STIG-xyz"/>
       <prop name="allows-authenticated-scan"  value="no">
         <remarks><p>If no, explain why. If yes, omit remarks field.</p></remarks>
       </prop>
+      <prop name="function" value="Required brief, text-based description."/>
+      <prop name="model" value="Model Number"/>
+      <prop name="software-name" value="software-name"/>
+      <prop name="software-version" value="V 0.0.0"/>
+      <!--      <prop name="vendor-name" value="Vendor Name"/>-->
+      <prop name="software-patch-level" value="Patch-Level"/>
+      
+     
+      <prop name="ipv4-address" value="0.0.0.0"/>
+      <prop name="ipv6-address" value="0000:0000:0000:0000"/>
+
+      <prop name="fqdn" value="example.com"/>
+      <prop name="uri" value="https://examplec.om"/>
+      <prop name="netbios-name" value="netbios-name"/>
+      <prop name="mac-address" value="00:00:00:00:00:00"/>
+      <prop name="serial-number" value="Serial #"/>
+      <prop name="asset-tag" value="Asset Tag"/>
+      <prop name="scan-type" ns="http://fedramp.gov/ns/oscal" value="infrastructure"/>
       <prop name="baseline-configuration-name" value="Baseline Config. Name" />
       <prop name="physical-location" value="Physical location of Asset" />
       <prop name="is-scanned" value="yes"/>
-      <prop name="function" value="Required brief, text-based description."/>
       <link rel="validated-by" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985" />
       <remarks><p>COMMENTS: Additional information about this item, such as the admin and asset owner.</p></remarks>
     </inventory-item>
