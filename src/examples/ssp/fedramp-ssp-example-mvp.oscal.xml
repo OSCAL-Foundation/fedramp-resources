@@ -2,7 +2,7 @@
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
   uuid="11111111-2222-4000-8000-000000000000">
   <metadata>
-    <title>[EXAMPLE] FedRAMP [Baseline Name] System Security Plan (SSP)</title>
+    <title>FedRAMP OSCAL MVP System Security Plan (SSP)</title>
     <published>2024-12-31T23:59:59Z</published>
     <last-modified>2025-01-08T04:18:29Z</last-modified>
     <version>Draft-01</version>
@@ -99,7 +99,7 @@
 
     <user uuid="11111111-2222-4000-8000-008000000001">
       <authorized-privilege>
-        <title/>
+        <title>none</title>
         <function-performed>none</function-performed>
       </authorized-privilege>
     </user>
