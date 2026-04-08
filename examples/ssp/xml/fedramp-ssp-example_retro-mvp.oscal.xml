@@ -1,9 +1,9 @@
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="11111111-2222-4000-8000-000000000000">
   <metadata>
-    <title>FedRAMP OSCAL MVP System Security Plan (SSP)</title>
-    <published>2024-12-31T23:59:59Z</published>
-    <last-modified>2025-01-08T04:18:29Z</last-modified>
-    <version>Draft-01</version>
+    <title>FedRAMP OSCAL Retro MVP System Security Plan (SSP)</title>
+    <published>2026-04-14T00:00:00Z</published>
+    <last-modified>2026-04-15T00:00:00Z</last-modified>
+    <version>RETRO-MVP-EXAMPLE</version>
     <oscal-version>1.2.1</oscal-version>
     <role id="cloud-service-provider">
       <title>Cloud Service Provider</title>
@@ -173,19 +173,19 @@
         <value>change in policy or a security incident involving a failure of access control mechanisms</value>
       </set-parameter>
       <statement statement-id="ac-1_smt.a" uuid="11111111-2222-4000-8000-012000010100">
+        <responsible-role role-id="information-system-security-officer">
+          <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
+          <remarks>
+            <p>An error in the OSCAL metaschema incorrectly requires at leat one <code>party-uuid</code> to be present.</p>
+            <p>For now, just use the <code>party-uuid</code> of the CSP parties entry. </p>
+            <p>The <code>party-uuid</code> will be removed from the MVP once <a href="https://github.com/usnistgov/OSCAL/issues/2122">Issue 2122</a> is resolved.</p>
+          </remarks>
+        </responsible-role>
         <by-component component-uuid="11111111-2222-4000-8000-009000000000" uuid="11111111-2222-4000-8000-012000010101">
           <description>
             <p>Describe how Part a is satisfied within the system as a whole.</p>
           </description>
           <implementation-status state="implemented" />
-          <responsible-role role-id="information-system-security-officer">
-            <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
-            <remarks>
-              <p>An error in the OSCAL metaschema incorrectly requires at leat one <code>party-uuid</code> to be present.</p>
-              <p>For now, just use the <code>party-uuid</code> of the CSP parties entry. </p>
-              <p>The <code>party-uuid</code> will be removed from the MVP once <a href="https://github.com/usnistgov/OSCAL/issues/2122">Issue 2122</a> is resolved.</p>
-            </remarks>
-          </responsible-role>
         </by-component>
       </statement>
       <statement statement-id="ac-1_smt.b" uuid="11111111-2222-4000-8000-012000010200">

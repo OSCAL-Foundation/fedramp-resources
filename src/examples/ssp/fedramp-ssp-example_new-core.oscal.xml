@@ -2,10 +2,10 @@
 <system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
   uuid="11111111-2222-4000-8000-000000000000">
   <metadata>
-    <title>FedRAMP OSCAL MVP System Security Plan (SSP)</title>
-    <published>2024-12-31T23:59:59Z</published>
-    <last-modified>2025-01-08T04:18:29Z</last-modified>
-    <version>Draft-01</version>
+    <title>FedRAMP OSCAL New Core System Security Plan (SSP)</title>
+    <published>2026-04-14T00:00:00Z</published>
+    <last-modified>2026-04-15T00:00:00Z</last-modified>
+    <version>NEW-CORE-EXAMPLE</version>
     <oscal-version>1.2.1</oscal-version>
 
     <role id="cloud-service-provider">
@@ -36,7 +36,8 @@
 
   </metadata>
   <import-profile
-    href="https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml"> </import-profile>
+    href="https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml" /> 
+  
 
   <system-characteristics>
     <system-id identifier-type="http://fedramp.gov/ns/oscal">F00000000</system-id>

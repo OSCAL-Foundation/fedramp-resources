@@ -1,10 +1,10 @@
 system-security-plan:
   uuid: 11111111-2222-4000-8000-000000000000
   metadata:
-    title: FedRAMP OSCAL MVP System Security Plan (SSP)
-    published: '2024-12-31T23:59:59Z'
-    last-modified: '2025-01-08T04:18:29Z'
-    version: Draft-01
+    title: FedRAMP OSCAL Retro MVP System Security Plan (SSP)
+    published: '2026-04-14T00:00:00Z'
+    last-modified: '2026-04-15T00:00:00Z'
+    version: RETRO-MVP-EXAMPLE
     oscal-version: 1.2.1
     roles:
     - id: cloud-service-provider
@@ -32,7 +32,7 @@ system-security-plan:
       party-uuids:
       - 11111111-2222-4000-8000-004000000001
   import-profile:
-    href: https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml
+    href: https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/yaml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.yaml
   system-characteristics:
     system-ids:
     - identifier-type: http://fedramp.gov/ns/oscal
@@ -208,21 +208,21 @@ system-security-plan:
       statements:
       - statement-id: ac-1_smt.a
         uuid: 11111111-2222-4000-8000-012000010100
+        responsible-roles:
+        - role-id: information-system-security-officer
+          party-uuids:
+          - 11111111-2222-4000-8000-004000000001
+          remarks: "An error in the OSCAL metaschema incorrectly requires at leat\
+            \ one `party-uuid` to be present.\n\nFor now, just use the `party-uuid`\
+            \ of the CSP parties entry. \n\nThe `party-uuid` will be removed from\
+            \ the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122)\
+            \ is resolved."
         by-components:
         - component-uuid: 11111111-2222-4000-8000-009000000000
           uuid: 11111111-2222-4000-8000-012000010101
           description: Describe how Part a is satisfied within the system as a whole.
           implementation-status:
             state: implemented
-          responsible-roles:
-          - role-id: information-system-security-officer
-            party-uuids:
-            - 11111111-2222-4000-8000-004000000001
-            remarks: "An error in the OSCAL metaschema incorrectly requires at leat\
-              \ one `party-uuid` to be present.\n\nFor now, just use the `party-uuid`\
-              \ of the CSP parties entry. \n\nThe `party-uuid` will be removed from\
-              \ the MVP once [Issue 2122](https://github.com/usnistgov/OSCAL/issues/2122)\
-              \ is resolved."
       - statement-id: ac-1_smt.b
         uuid: 11111111-2222-4000-8000-012000010200
         by-components:

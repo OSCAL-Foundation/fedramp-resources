@@ -356,7 +356,7 @@
         <description>
           <p>A description of the information.</p>
         </description>
-        <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+        <categorization system="http://doi.org/10.6028/NIST.SP.800-60v2r1">
           <information-type-id>C.2.4.1</information-type-id>
         </categorization>
         <confidentiality-impact>
@@ -386,7 +386,7 @@
         <description>
           <p>A description of the information.</p>
         </description>
-        <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+        <categorization system="http://doi.org/10.6028/NIST.SP.800-60v2r1">
           <information-type-id>C.3.5.1</information-type-id>
         </categorization>
         <confidentiality-impact>
@@ -416,7 +416,7 @@
         <description>
           <p>A description of the information.</p>
         </description>
-        <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+        <categorization system="http://doi.org/10.6028/NIST.SP.800-60v2r1">
           <information-type-id>C.3.5.8</information-type-id>
         </categorization>
         <confidentiality-impact>
@@ -489,14 +489,12 @@
   <system-implementation>
     <leveraged-authorization uuid="11111111-2222-4000-8000-019000000001">
       <title>AwesomeCloud Commercial(IaaS)</title>
-      <prop ns="http://fedramp.gov/ns/oscal" name="leveraged-system-identifier" value="F9999999999"/>
-      <prop ns="http://fedramp.gov/ns/oscal" name="impact-level" value="fips-199-high" />
-
-      
-      <party-uuid>11111111-2222-4000-8000-c0040000000a</party-uuid>
+      <prop ns="http://fedramp.gov/ns/oscal" name="package-id" value="F9999999999"/>
+      <prop ns="http://fedramp.gov/ns/oscal" name="security-sensitivity-level" value="fips-199-high" />
+      <party-uuid>22222222-2222-4000-8000-004000000001</party-uuid>
       <date-authorized>2015-01-01</date-authorized>
-
     </leveraged-authorization>
+    
     <user uuid="11111111-2222-4000-8000-008000000001">
       <authorized-privilege>
         <title>none</title>
@@ -564,10 +562,6 @@
         <party-uuid>11111111-2222-4000-8000-c0040000000a</party-uuid>
       </responsible-role>
       <responsible-role role-id="asset-administrator">
-        <prop name="privilege-uuid" value="11111111-2222-4000-8000-008000000004"
-          ns="http://fedramp.gov/ns/oscal"/>
-        <prop name="privilege-uuid" value="11111111-2222-4000-8000-008000000005"
-          ns="http://fedramp.gov/ns/oscal"/>
         <party-uuid>11111111-2222-4000-8000-c0040000000a</party-uuid>
       </responsible-role>
     </component>

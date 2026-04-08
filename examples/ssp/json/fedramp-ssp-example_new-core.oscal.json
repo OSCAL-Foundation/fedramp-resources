@@ -2,10 +2,10 @@
   "system-security-plan": {
     "uuid": "11111111-2222-4000-8000-000000000000",
     "metadata": {
-      "title": "FedRAMP OSCAL MVP System Security Plan (SSP)",
-      "published": "2024-12-31T23:59:59Z",
-      "last-modified": "2025-01-08T04:18:29Z",
-      "version": "Draft-01",
+      "title": "FedRAMP OSCAL New Core System Security Plan (SSP)",
+      "published": "2026-04-14T00:00:00Z",
+      "last-modified": "2026-04-15T00:00:00Z",
+      "version": "NEW-CORE-EXAMPLE",
       "oscal-version": "1.2.1",
       "roles": [
         {
@@ -53,7 +53,7 @@
       ]
     },
     "import-profile": {
-      "href": "https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml"
+      "href": "https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/json/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.json"
     },
     "system-characteristics": {
       "system-ids": [

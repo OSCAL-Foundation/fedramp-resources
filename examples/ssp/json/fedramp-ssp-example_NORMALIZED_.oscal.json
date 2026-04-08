@@ -600,7 +600,7 @@
       ]
     },
     "import-profile": {
-      "href": "https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml"
+      "href": "https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/json/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.json"
     },
     "system-characteristics": {
       "system-ids": [
@@ -653,7 +653,7 @@
             "description": "A description of the information.",
             "categorizations": [
               {
-                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "system": "http://doi.org/10.6028/NIST.SP.800-60v2r1",
                 "information-type-ids": [
                   "C.2.4.1"
                 ]
@@ -681,7 +681,7 @@
             "description": "A description of the information.",
             "categorizations": [
               {
-                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "system": "http://doi.org/10.6028/NIST.SP.800-60v2r1",
                 "information-type-ids": [
                   "C.3.5.1"
                 ]
@@ -709,7 +709,7 @@
             "description": "A description of the information.",
             "categorizations": [
               {
-                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "system": "http://doi.org/10.6028/NIST.SP.800-60v2r1",
                 "information-type-ids": [
                   "C.3.5.8"
                 ]
@@ -797,17 +797,17 @@
           "title": "AwesomeCloud Commercial(IaaS)",
           "props": [
             {
-              "name": "leveraged-system-identifier",
+              "name": "package-id",
               "ns": "http://fedramp.gov/ns/oscal",
               "value": "F9999999999"
             },
             {
-              "name": "impact-level",
+              "name": "security-sensitivity-level",
               "ns": "http://fedramp.gov/ns/oscal",
               "value": "fips-199-high"
             }
           ],
-          "party-uuid": "11111111-2222-4000-8000-c0040000000a",
+          "party-uuid": "22222222-2222-4000-8000-004000000001",
           "date-authorized": "2015-01-01"
         }
       ],
@@ -959,18 +959,6 @@
             },
             {
               "role-id": "asset-administrator",
-              "props": [
-                {
-                  "name": "privilege-uuid",
-                  "ns": "http://fedramp.gov/ns/oscal",
-                  "value": "11111111-2222-4000-8000-008000000004"
-                },
-                {
-                  "name": "privilege-uuid",
-                  "ns": "http://fedramp.gov/ns/oscal",
-                  "value": "11111111-2222-4000-8000-008000000005"
-                }
-              ],
               "party-uuids": [
                 "11111111-2222-4000-8000-c0040000000a"
               ]
@@ -1257,7 +1245,7 @@
               "text": "UUID of remote system"
             },
             {
-              "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/refs/heads/main/examples/poam/xml/ifa_plan-of-action-and-milestones.xml",
+              "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/refs/heads/main/examples/poam/json/ifa_plan-of-action-and-milestones.json",
               "rel": "poam-item",
               "resource-fragment": "11111111-3333-4000-8000-000000000001"
             }
