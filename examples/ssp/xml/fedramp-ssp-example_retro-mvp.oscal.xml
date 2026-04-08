@@ -1,27 +1,22 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-  uuid="11111111-2222-4000-8000-000000000000">
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="11111111-2222-4000-8000-000000000000">
   <metadata>
-    <title>[EXAMPLE] FedRAMP [Baseline Name] System Security Plan (SSP)</title>
-    <published>2024-12-31T23:59:59Z</published>
-    <last-modified>2025-01-08T04:18:29Z</last-modified>
-    <version>Draft-01</version>
+    <title>FedRAMP OSCAL Retro MVP System Security Plan (SSP)</title>
+    <published>2026-04-14T00:00:00Z</published>
+    <last-modified>2026-04-15T00:00:00Z</last-modified>
+    <version>RETRO-MVP-EXAMPLE</version>
     <oscal-version>1.2.1</oscal-version>
-
     <role id="cloud-service-provider">
       <title>Cloud Service Provider</title>
       <short-name>CSP</short-name>
     </role>
-    
     <role id="information-system-security-officer">
       <title>Information System Security Officer</title>
       <short-name>ISSO</short-name>
     </role>
-
     <party uuid="11111111-2222-4000-8000-004000000001" type="organization">
       <name>Cloud Service Provider (CSP) Name</name>
       <short-name>CSP Acronym/Short Name</short-name>
-      <link href="http://example.com" rel="homepage"/>
+      <link href="http://example.com" rel="homepage" />
       <address>
         <addr-line>1234 S. Main St.</addr-line>
         <city>Anywhere</city>
@@ -29,15 +24,11 @@
         <postal-code>00000</postal-code>
       </address>
     </party>
-
     <responsible-party role-id="cloud-service-provider">
       <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
     </responsible-party>
-
   </metadata>
-  <import-profile
-    href="https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml"> </import-profile>
-
+  <import-profile href="https://raw.githubusercontent.com/OSCAL-Foundation/fedramp-resources/refs/heads/main/baselines/rev5/xml/FedRAMP_rev5_HIGH-baseline-resolved-profile_catalog.xml"> </import-profile>
   <system-characteristics>
     <system-id identifier-type="http://fedramp.gov/ns/oscal">F00000000</system-id>
     <system-name>System's Full Name</system-name>
@@ -45,8 +36,8 @@
     <description>
       <p>Provide the system description here</p>
     </description>
-    <prop name="cloud-service-model" value="saas"/>
-    <prop name="cloud-deployment-model" value="government-only-cloud"/>
+    <prop name="cloud-service-model" value="saas" />
+    <prop name="cloud-deployment-model" value="government-only-cloud" />
     <security-sensitivity-level>fips-199-high</security-sensitivity-level>
     <system-information>
       <information-type uuid="11111111-2222-4000-8000-006000000001">
@@ -58,9 +49,7 @@
         </description>
       </information-type>
     </system-information>
-
-    <status state="operational"/>
-
+    <status state="operational" />
     <authorization-boundary>
       <description>
         <p>A holistic, top-level explanation of the FedRAMP authorization boundary.</p>
@@ -69,7 +58,7 @@
         <description>
           <p>Authorization boundary narriative.</p>
         </description>
-        <link href="./authorization_boundary.pdf" media-type="application/pdf" rel="diagram"/>
+        <link href="./authorization_boundary.pdf" media-type="application/pdf" rel="diagram" />
       </diagram>
     </authorization-boundary>
     <network-architecture>
@@ -80,7 +69,7 @@
         <description>
           <p>A diagram-specific explanation.</p>
         </description>
-        <link href="./network_architecture.pdf" media-type="application/pdf" rel="diagram"/>
+        <link href="./network_architecture.pdf" media-type="application/pdf" rel="diagram" />
       </diagram>
     </network-architecture>
     <data-flow>
@@ -91,19 +80,17 @@
         <description>
           <p>Dataflow diagram narriative.</p>
         </description>
-        <link href="./data_flow_diagram.pdf" media-type="application/pdf" rel="diagram"/>
+        <link href="./data_flow_diagram.pdf" media-type="application/pdf" rel="diagram" />
       </diagram>
     </data-flow>
   </system-characteristics>
   <system-implementation>
-
     <user uuid="11111111-2222-4000-8000-008000000001">
       <authorized-privilege>
-        <title/>
+        <title>none</title>
         <function-performed>none</function-performed>
       </authorized-privilege>
     </user>
-
     <component uuid="11111111-2222-4000-8000-009000000000" type="this-system">
       <title>This System</title>
       <description>
@@ -112,14 +99,53 @@
         <p>FedRAMP requires exactly one "this-system" component, which is used in control
           implementation responses and interconnections.</p>
       </description>
-      <status state="operational"/>
+      <status state="operational" />
     </component>
-
+    <inventory-item uuid="11111111-2222-4000-8000-011000000001">
+      <description>
+        <p>Flat-File Example (No implemented-component).</p>
+      </description>
+      <prop name="asset-type" value="os" />
+      <prop name="asset-id" value="unique-asset-id" />
+      <prop name="asset-tag" value="xyz-123" />
+      <prop name="public" value="no" />
+      <prop name="virtual" value="no" />
+      <prop name="vlan-id" value="VLAN Identifier" />
+      <prop name="network-id" value="Network Identifier" />
+      <prop name="label" value="Diagram Label" />
+      <prop name="sort-id" value="000001" />
+      <prop name="baseline-configuration-name" value="STIG-xyz" />
+      <prop name="allows-authenticated-scan" value="no">
+        <remarks>
+          <p>If no, explain why. If yes, omit remarks field.</p>
+        </remarks>
+      </prop>
+      <prop name="function" value="Required brief, text-based description." />
+      <prop name="model" value="Model Number" />
+      <prop name="software-name" value="software-name" />
+      <prop name="software-version" value="V 0.0.0" />
+      <prop name="software-patch-level" value="Patch-Level" />
+      <prop name="ipv4-address" value="0.0.0.0" />
+      <prop name="ipv6-address" value="0000:0000:0000:0000" />
+      <prop name="fqdn" value="example.com" />
+      <prop name="uri" value="https://examplec.om" />
+      <prop name="netbios-name" value="netbios-name" />
+      <prop name="mac-address" value="00:00:00:00:00:00" />
+      <prop name="serial-number" value="Serial #" />
+      <prop name="asset-tag" value="Asset Tag" />
+      <prop name="scan-type" ns="http://fedramp.gov/ns/oscal" value="infrastructure" />
+      <prop name="baseline-configuration-name" value="Baseline Config. Name" />
+      <prop name="physical-location" value="Physical location of Asset" />
+      <prop name="is-scanned" value="yes" />
+      <link rel="validated-by" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985" />
+      <remarks>
+        <p>COMMENTS: Additional information about this item, such as the admin and asset owner.</p>
+      </remarks>
+    </inventory-item>
   </system-implementation>
   <control-implementation>
     <description>
-      <p>OSCAL requires this description field to be present.</p>
-      <p>FedRAMP will ignore it.</p>
+      <p>There is one control in this example. Follow this pattern for each additional control.</p>
     </description>
     <implemented-requirement control-id="ac-1" uuid="11111111-2222-4000-8000-012000010000">
       <set-parameter param-id="ac-01_odp.01">
@@ -147,134 +173,72 @@
         <value>change in policy or a security incident involving a failure of access control mechanisms</value>
       </set-parameter>
       <statement statement-id="ac-1_smt.a" uuid="11111111-2222-4000-8000-012000010100">
-        <by-component component-uuid="11111111-2222-4000-8000-009000000000"
-          uuid="11111111-2222-4000-8000-012000010101">
+        <responsible-role role-id="information-system-security-officer">
+          <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
+          <remarks>
+            <p>An error in the OSCAL metaschema incorrectly requires at leat one <code>party-uuid</code> to be present.</p>
+            <p>For now, just use the <code>party-uuid</code> of the CSP parties entry. </p>
+            <p>The <code>party-uuid</code> will be removed from the MVP once <a href="https://github.com/usnistgov/OSCAL/issues/2122">Issue 2122</a> is resolved.</p>
+          </remarks>
+        </responsible-role>
+        <by-component component-uuid="11111111-2222-4000-8000-009000000000" uuid="11111111-2222-4000-8000-012000010101">
           <description>
             <p>Describe how Part a is satisfied within the system as a whole.</p>
           </description>
-          <implementation-status state="implemented"/>
-          <responsible-role role-id="information-system-security-officer" >
-            <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
-            <remarks>
-              <p>An error in the OSCAL metaschema incorrectly requires at leat one <code>party-uuid</code> to be present.</p>
-              <p>For now, just use the <code>party-uuid</code> of the CSP parties entry. </p>
-              <p>The <code>party-uuid</code> will be removed from the MVP once <a href="https://github.com/usnistgov/OSCAL/issues/2122">Issue 2122</a> is resolved.</p>
-            </remarks>
-            </responsible-role> 
+          <implementation-status state="implemented" />
         </by-component>
       </statement>
       <statement statement-id="ac-1_smt.b" uuid="11111111-2222-4000-8000-012000010200">
-        <by-component component-uuid="11111111-2222-4000-8000-009000000000"
-          uuid="11111111-2222-4000-8000-012000010201">
+        <by-component component-uuid="11111111-2222-4000-8000-009000000000" uuid="11111111-2222-4000-8000-012000010201">
           <description>
             <p>Describe how Part b is satisfied within the system as a whole.</p>
           </description>
-          <prop ns="http://fedramp.gov/ns/oscal" name="planned-completion-date" value="2024-01-31Z"/>
+          <prop ns="http://fedramp.gov/ns/oscal" name="planned-completion-date" value="2024-01-31Z" />
           <implementation-status state="partial">
             <remarks>
               <p>Describe the plan to complete the implementation.</p>
             </remarks>
           </implementation-status>
-          <responsible-role role-id="information-system-security-officer" >
+          <responsible-role role-id="information-system-security-officer">
             <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
             <remarks>
               <p>An error in the OSCAL metaschema incorrectly requires at leat one <code>party-uuid</code> to be present.</p>
               <p>For now, just use the <code>party-uuid</code> of the CSP parties entry. </p>
               <p>The <code>party-uuid</code> will be removed from the MVP once <a href="https://github.com/usnistgov/OSCAL/issues/2122">Issue 2122</a> is resolved.</p>
             </remarks>
-          </responsible-role> 
+          </responsible-role>
         </by-component>
       </statement>
       <statement statement-id="ac-1_smt.c" uuid="11111111-2222-4000-8000-012000010300">
-        <by-component component-uuid="11111111-2222-4000-8000-009000000000"
-          uuid="11111111-2222-4000-8000-012000010301">
+        <by-component component-uuid="11111111-2222-4000-8000-009000000000" uuid="11111111-2222-4000-8000-012000010301">
           <description>
             <p>Describe how Part b-1 is satisfied.</p>
           </description>
-          <implementation-status state="implemented"/>
-          <responsible-role role-id="information-system-security-officer" >
+          <implementation-status state="implemented" />
+          <responsible-role role-id="information-system-security-officer">
             <party-uuid>11111111-2222-4000-8000-004000000001</party-uuid>
             <remarks>
               <p>An error in the OSCAL metaschema incorrectly requires at leat one <code>party-uuid</code> to be present.</p>
               <p>For now, just use the <code>party-uuid</code> of the CSP parties entry. </p>
               <p>The <code>party-uuid</code> will be removed from the MVP once <a href="https://github.com/usnistgov/OSCAL/issues/2122">Issue 2122</a> is resolved.</p>
             </remarks>
-          </responsible-role> 
-
+          </responsible-role>
         </by-component>
       </statement>
     </implemented-requirement>
   </control-implementation>
   <back-matter>
-
-    <resource uuid="11111111-2222-4000-8000-001000000005">
-      <title>Access Control (AC) Policy</title>
-      <rlink media-type="application/pdf" href="./AC_policy.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000023">
-      <title>Access Control (AC) Procedure Title</title>
-      <rlink media-type="application/pdf" href="./AC_procedure.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000041">
-      <title>User's Guide</title>
-      <rlink media-type="application/pdf" href="./users_guide.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000042">
-      <title>Rules of Behavior (RoB)</title>
-      <rlink href="./rob.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000043">
-      <title>Contingency Plan (CP)</title>
-      <rlink href="./cp.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000044">
-      <title>Configuration Management (CM) Plan</title>
-      <rlink href="./CM_Plan.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000045">
-      <title>Incident Response (IR) Plan</title>
-      <rlink href="./IR_Plan.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000047">
-      <title>Continuous Monitoring Plan</title>
-      <rlink href="./ConMon_Plan.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000049">
-      <title>Supply Chain Risk Management Plan</title>
-      <rlink href="./attachments/plans/sample_SCRMP_procedure.pdf"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000050">
-      <title>Interconnection Security Agreement</title>
-      <rlink href="./ISA-1.docx" media-type="application/msword"/>
-    </resource>
-
-    <resource uuid="11111111-2222-4000-8000-001000000052">
-      <title>CSP Logo</title>
-      <rlink href="./attachments/img/logo.png" media-type="image/png"/>
-    </resource>
-
     <resource uuid="11111111-2222-4000-8000-001000000054">
       <title>Boundary Diagram</title>
-      <rlink href="./attachments/diagrams/boundary.png"/>
+      <rlink href="./attachments/diagrams/boundary.png" />
     </resource>
     <resource uuid="11111111-2222-4000-8000-001000000055">
       <title>Network Diagram</title>
-      <rlink href="./attachments/diagrams/network.png"/>
+      <rlink href="./attachments/diagrams/network.png" />
     </resource>
     <resource uuid="11111111-2222-4000-8000-001000000056">
       <title>Data Flow Diagram</title>
-      <rlink href="./attachments/diagrams/dataflow.png"/>
+      <rlink href="./attachments/diagrams/dataflow.png" />
     </resource>
-
-
   </back-matter>
 </system-security-plan>
